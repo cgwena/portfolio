@@ -40,6 +40,7 @@ section  {
     margin: 0;
     padding-top: 120px;
     height: 100vh;
+    width: 100vw;
     border: 2px solid black;
     display: flex;
     justify-content: space-around;
