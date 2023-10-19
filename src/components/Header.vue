@@ -1,10 +1,9 @@
 <template>
     <section>
-        <div>
-            <h1>Gwenaëlle Boussès</h1>
-            <p>Développeuse Web</p>
-        </div>
         <img src="/src/assets/pictures/greetings.png" alt="">
+        <p>Accueil</p>
+        <p>Mes projets</p>
+        <p>Contacts</p>
     </section>
 </template>
 
@@ -25,27 +24,24 @@
     src: url('/src/assets/fonts/Kreon/Kreon-VariableFont_wght.ttf') format('truetype');
 }
 
-h1 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
+section {
+    position: fixed;
+    width: 100vw;
+    height: 120px;
+    box-sizing: border-box;
+    margin: 0;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    height: 100px;
 }
 
 p {
     font-family: 'Kreon', serif;
-    font-size: 2rem;
-}
-
-section  {
-    box-sizing: border-box;
-    margin: 0;
-    padding-top: 120px;
-    height: 100vh;
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-around;
-}
-
-img {
-    height: 300px;
+    font-size: 1.6rem;
 }
 </style>
