@@ -1,6 +1,6 @@
 <template>
     <section>
-        <img src="/src/assets/pictures/greetings.png" alt="">
+        <img src="/src/assets/pictures/sticker.png" alt="">
         <p>Accueil</p>
         <p>Mes projets</p>
         <p>Contacts</p>
