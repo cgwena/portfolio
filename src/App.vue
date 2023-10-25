@@ -1,8 +1,5 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import Presentation from './views/Presentation.vue'
-import Projets from './views/Projets.vue'
-import Formulaire from './views/Formulaire.vue'
 </script>
 
 <template>
@@ -43,8 +40,6 @@ import Formulaire from './views/Formulaire.vue'
 </template>
 
 <style scoped>
-
-
 @font-face {
   font-family: 'Kreon';
   src: url('/src/assets/fonts/Kreon/Kreon-VariableFont_wght.woff');
@@ -52,7 +47,7 @@ import Formulaire from './views/Formulaire.vue'
 }
 
 header {
-  background-color: aqua;
+  background-color: white;
   position: fixed;
   top:0;
   left: 0;

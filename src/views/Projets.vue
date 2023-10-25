@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import Modale from '../components/modale.vue'
+import Modale from '../components/Modale.vue'
 
 export default {
     name: "Projets", 
