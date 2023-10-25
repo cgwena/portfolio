@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import Modale from './Modale.vue'
+import Modale from '../components/modale.vue'
 
 export default {
     name: "Projets", 
@@ -75,11 +75,8 @@ p {
 }
 
 section {
-    box-sizing: border-box;
-    margin: 0;
-    padding-top: 120px;
+    padding-top: 20px;
     height: 100vh;
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

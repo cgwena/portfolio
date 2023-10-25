@@ -47,11 +47,8 @@ label {
 }
 
 section  {
-    box-sizing: border-box;
-    margin: 0;
     padding-top: 120px;
     height: 100vh;
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
