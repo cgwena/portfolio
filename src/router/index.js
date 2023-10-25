@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Presentation from '../views/Presentation.vue'
 import Projets from '../views/Projets.vue'
 import Formulaire from '../views/Formulaire.vue'
+import NotFound from '../views/NotFound.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,8 +19,13 @@ const router = createRouter({
     },
     {
       path: '/form',
-      name:'form',
+      name: 'form',
       component: Formulaire,
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'not-found',
+      component: NotFound,
     }
   ]
 })
