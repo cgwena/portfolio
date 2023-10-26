@@ -4,7 +4,7 @@
         <div class="overlay" @click="toggleModale">
 
             <div class="modale">
-                <button @click="toggleModale">x</button>
+                <button @click="toggleModale">X</button>
                 <h2>Mon CV en ligne</h2>
                 <div class="contenu">
                     <a href="/src/assets/projects/Creer_un_CV-1/index.html" target="_blank"><img
@@ -69,31 +69,12 @@
 <script>
 export default {
     name: "Modale",
-    props: ['revele', 'revele2','revele3', 'toggleModale', 'toggleModale2', 'toggleModale3']
+    props: ['revele', 'revele2', 'revele3', 'toggleModale', 'toggleModale2', 'toggleModale3']
 }
 
 </script>
 
 <style scoped>
-@font-face {
-    font-family: "Kreon";
-    src: url("/src/assets/fonts/Kreon/Kreon-VariableFont_wght.woff");
-    src: url("/src/assets/fonts/Kreon/Kreon-VariableFont_wght.ttf") format("truetype");
-}
-
-h2,
-p {
-    font-family: 'Kreon', serif;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-p {
-    font-size: 1.4rem;
-}
-
 img {
     width: 400px;
     border-radius: 10px;
@@ -129,15 +110,19 @@ img {
     left: 20%;
     top: 25%;
     border-radius: 20px;
-    background: #C8C8A9;
+    background: #F8ECC9;
     width: 60%;
-    padding: 10px;
+    padding-bottom: 30px;
 }
 
 .contenu {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+p {
+    font-size: 1.6rem;
 }
 
 button {

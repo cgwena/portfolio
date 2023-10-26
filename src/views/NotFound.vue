@@ -1,13 +1,24 @@
 <template>
     <section>
-        <h1>Page not found !</h1>
+    <img src="/src/assets/pictures/magnifying glass.png" alt="">
+        <h2>404 - Page not found !</h2>
     </section>
 </template>
 
 <style scoped>
+
+img {
+    height: 500px;
+    border-radius: 0 0 0 50%;
+}
+
 section {
-    height: 100vh;
-    padding-top: 300px;
+    display: flex;
+    align-items:center;
+}
+
+h2 {
+    font-family: 'Kreon';
 }
 
 </style>

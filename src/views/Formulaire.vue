@@ -24,31 +24,10 @@
 </script>
 
 <style scoped>
-@font-face {
-    font-family: 'Great Vibes';
-    src: url('/src/assets/fonts/Great_Vibes/GreatVibes-Regular.woff');
-    src: url('/src/assets/fonts/Great_Vibes/GreatVibes-Regular.ttf') format('truetype')
-}
 
-@font-face {
-    font-family: 'Kreon';
-    src: url('/src/assets/fonts/Kreon/Kreon-VariableFont_wght.woff');
-    src: url('/src/assets/fonts/Kreon/Kreon-VariableFont_wght.ttf') format('truetype');
-}
 
-h2 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
-}
-
-label {
-    font-family: 'Kreon', serif;
-    font-size: 1.6;
-}
 
 section  {
-    padding-top: 120px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,13 +40,13 @@ div {
     margin-bottom: 10px;
 }
 
-form {
-    border: 2px solid black;
-    border-radius: 5%;
-    padding: 20px;
-}
 
 button {
     margin-top: 10px;
+    font-family: 'Kreon';
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: #EB9F9F;
 }
+
 </style>

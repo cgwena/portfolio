@@ -1,8 +1,10 @@
 <template>
     <section>
         <div>
+        <p>Bonjour, moi c'est</p>
             <h1>Gwenaëlle Boussès</h1>
-            <p>Développeuse Web</p>
+            <p>et je suis</p>
+            <h2>Développeuse Web !!!</h2>
         </div>
         <img src="/src/assets/pictures/greetings.png" alt="">
     </section>
@@ -13,37 +15,29 @@
 </script>
 
 <style scoped>
-@font-face {
-    font-family: 'Great Vibes';
-    src: url('/src/assets/fonts/Great_Vibes/GreatVibes-Regular.woff');
-    src: url('/src/assets/fonts/Great_Vibes/GreatVibes-Regular.ttf') format('truetype')
-}
-
-@font-face {
-    font-family: 'Kreon';
-    src: url('/src/assets/fonts/Kreon/Kreon-VariableFont_wght.woff');
-    src: url('/src/assets/fonts/Kreon/Kreon-VariableFont_wght.ttf') format('truetype');
-}
-
-h1 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
-}
-
-p {
-    font-family: 'Kreon', serif;
-    font-size: 2rem;
-}
-
-section  {
-    padding-top: 120px;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-}
 
 img {
     height: 300px;
+    width: 300px;
+    object-fit: cover; 
+    border-radius: 50%;
+    border: 1px solid #EB9F9F;
 }
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, p {
+    line-height: 0;
+    margin: 22px;
+}
+
 </style>
