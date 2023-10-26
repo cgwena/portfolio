@@ -8,13 +8,13 @@ import { RouterView } from 'vue-router'
     <nav>
       <ul>
         <li>
-          <RouterLink to='/'>Accueil</RouterLink>
+          <RouterLink class="header__link" active-class="active" to='/'>Accueil</RouterLink>
         </li>
         <li>
-          <RouterLink to="/projets">Mes Projets</RouterLink>
+          <RouterLink class="header__link" active-class="active" to="/projets">Mes Projets</RouterLink>
         </li>
         <li>
-          <RouterLink to="/form">Contactez-moi</RouterLink>
+          <RouterLink class="header__link" active-class="active" to="/form">Contactez-moi</RouterLink>
         </li>
       </ul>
     </nav>
@@ -27,7 +27,7 @@ import { RouterView } from 'vue-router'
   </main>
 
   <footer>
-    <p>Mis à jour le <time datetime="2023-10-19">19 octobre 2023</time></p>
+    <small>Mis à jour le <time datetime="2023-10-19">19 octobre 2023</time></small>
     <div>
       <a href="https://github.com/cgwena" target="_blank"><img class="footer__logo" src="/src/assets/icons/github.png"
           alt="logo github"></a>
@@ -40,58 +40,6 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-@font-face {
-  font-family: 'Kreon';
-  src: url('/src/assets/fonts/Kreon/Kreon-VariableFont_wght.woff');
-  src: url('/src/assets/fonts/Kreon/Kreon-VariableFont_wght.ttf') format('truetype');
-}
-
-header {
-  background-color: white;
-  position: fixed;
-  top:0;
-  left: 0;
-  width: 100vw;
-  height: 120px;
-  box-sizing: border-box;
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.header__img {
-  height: 100px;
-}
-
-ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-li {
-  padding: 20px;
-  font-family: 'Kreon', serif;
-  font-size: 1.6rem;
-  list-style-type: none;
-  text-decoration: none;
-  color: black;
-}
-
-footer {
-  width: 100vw;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-p {
-  font-family: 'Kreon', serif;
-}
 
 div {
   width: 15%;
@@ -100,7 +48,4 @@ div {
   
 }
 
-.footer__logo {
-  height: 50px;
-}
 </style>
