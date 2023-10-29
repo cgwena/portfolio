@@ -1,19 +1,18 @@
 <template>
     <div class="bloc-modale" v-if="revele">
 
-        <div class="overlay" @click="toggleModale">
+        <div class="overlay" @click="toggleModale(project)">
 
-            <div class="modale">
-                <button @click="toggleModale">X</button>
-                <h2>Mon CV en ligne</h2>
+            <div class="modale" >
+                <button>X</button>
+                <h2>{{ project.title }}</h2>
                 <div class="contenu">
-                    <a href="/src/assets/projects/Creer_un_CV-1/index.html" target="_blank"><img
-                            src="/src/assets/pictures/MiniatureCV.png" alt="Mon CV en ligne"></a>
+                    <a v-bind:href="project.open_project" target="_blank"><img
+                            :src="project.picture" :alt="project.alt"></a>
                     <div class="text">
-                        <p>Créé le <time datetime="2023-10-09">9 octobre 2023</time></p>
-                        <p>Made with <img class="logo" src="/src/assets/icons/html-5.png" alt="logo html5"> <img
-                                class="logo" src="/src/assets/icons/css-3.png" alt="logo css3"></p>
-                        <p>Retrouvez ce projet sur <a href="https://github.com/cgwena/Creer_un_CV" target="_blank"><img
+                        <p>Créé le {{ project.date }}</p>
+                        <p v-if="project.logos">Made with <img class="logo"  v-for="logo in project.logos" :src="logo" alt=""></p>
+                        <p v-if="project.gh_link">Retrouvez ce projet sur <a v-bind:href="project.gh_link" target="_blank"><img
                                     class="logo" src="/src/assets/icons/github.png" alt=""></a></p>
                     </div>
                 </div>
@@ -21,55 +20,12 @@
         </div>
     </div>
 
-    <div class="bloc-modale" v-if="revele2">
-
-        <div class="overlay" @click="toggleModale2">
-
-            <div class="modale">
-                <button @click="toggleModale2">x</button>
-                <h2>Un espace de commentaire</h2>
-                <div class="contenu">
-                    <a href="/src/assets/projects/DynamiserUnEspaceDeCommentaires-1/index.html" target="_blank"><img
-                            src="/src/assets/pictures/MiniatureCommentaires.png" alt="Mon CV en ligne"></a>
-                    <div class="text">
-                        <p>Créé le <time datetime="2023-10-17">17 octobre 2023</time></p>
-                        <p>Made with <img class="logo" src="/src/assets/icons/html-5.png" alt="logo html5"> <img
-                                class="logo" src="/src/assets/icons/css-3.png" alt="logo css3"> <img class="logo"
-                                src="/src/assets/icons/js.png" alt="logo javascript"></p>
-                        <p>Retrouvez ce projet sur <a href="https://github.com/cgwena/DynamiserUnEspaceDeCommentaires"
-                                target="_blank"><img class="logo" src="/src/assets/icons/github.png" alt=""></a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="bloc-modale" v-if="revele3">
-
-        <div class="overlay" @click="toggleModale3">
-
-            <div class="modale">
-                <button @click="toggleModale3">x</button>
-                <h2>Un cahier des charges</h2>
-                <div class="contenu">
-                    <a href="/src/assets/projects/Cahier_des_charges-La_Socketterie.pdf" target="_blank"><img
-                            src="/src/assets/pictures/MiniatureCahierDesCharges.png"
-                            alt="la couverture du document cahier des charges"></a>
-                    <div class="text">
-                        <p>Créé le <time datetime="2023-10-15">15 octobre 2023</time></p>
-                        <p>La société "La Socketterie" veut créer une boutique en ligne. Voici le cahier des charges que je
-                            leur propose.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </template>
 
 <script>
 export default {
     name: "Modale",
-    props: ['revele', 'revele2', 'revele3', 'toggleModale', 'toggleModale2', 'toggleModale3']
+    props: ['revele', 'toggleModale', 'project']
 }
 
 </script>
@@ -106,6 +62,7 @@ img {
 }
 
 .modale {
+    text-align: center;
     position: fixed;
     left: 20%;
     top: 25%;

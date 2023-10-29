@@ -1,7 +1,7 @@
 <template>
-    <section>
+    <section id="about">
         <div>
-        <p>Bonjour, moi c'est</p>
+            <p>Bonjour, moi c'est</p>
             <h1>Gwenaëlle Boussès</h1>
             <p>et je suis</p>
             <h2>Développeuse Web !!!</h2>
@@ -15,11 +15,10 @@
 </script>
 
 <style scoped>
-
 img {
     height: 300px;
     width: 300px;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 50%;
     border: 1px solid #EB9F9F;
 }
@@ -27,6 +26,7 @@ img {
 section {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 div {
@@ -35,9 +35,10 @@ div {
     align-items: center;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
     line-height: 0;
     margin: 22px;
 }
-
 </style>
