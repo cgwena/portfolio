@@ -1,7 +1,8 @@
-@font-face {
-    font-family: 'Great Vibes';
-    src: url('/src/assets/fonts/Great_Vibes/GreatVibes-Regular.woff');
-    src: url('/src/assets/fonts/Great_Vibes/GreatVibes-Regular.ttf') format('truetype')
+:root {
+    --color1: #F8FAFF;
+    --color2: #CBA6C3;
+    --color3: #AAABD3;
+    --color4: #353866;
 }
 
 @font-face {
@@ -20,44 +21,31 @@
     box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(248, 236, 201, 1) 25%, rgba(241, 187, 186, 1) 100%);
-}
-
-.home {
-    display: flex;
-    flex-direction: column;
-}
-
 h1 {
     font-family: 'Chicle', sans-serif;
     font-size: 3.6rem;
     font-weight: 400;
-    color: #A79C8E;
+    color: var(--color4);
 }
 
 h2 {
     font-family: 'Chicle', sans-serif;
     font-size: 3rem;
     font-weight: 400;
-    color: #A79C8E;
+    color: var(--color4);
 }
 
 h3 {
     font-family: 'Chicle', sans-serif;
     font-size: 2rem;
     font-weight: 400;
-    color: #A79C8E;
+    color: var(--color4);
 }
 
 p {
     font-family: 'Kreon', serif;
     font-size: 2rem;
-    color: #A79C8E;
+    color: var(--color4);
 }
 
 label {
@@ -68,33 +56,69 @@ small {
     font-family: 'Kreon';
 }
 
+body {   
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(45deg, rgba(248,250,255,1) 0%, rgba(203,166,195,1) 50%, rgba(170,171,211,1) 100%);}
+
 section {
     padding-top: 100px;
-    padding-bottom: 30px;
-    height: 80vh;
-    width: 100vw;
+    min-height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+#about img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--color3);
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    
+}
+
+.card {
+    background-color: var(--color3);
+    text-align: center;
+    border : 1px solid var(--color3);
+    border-radius: 20px;
+    width: 30vw;
+    padding-top: 20px;
+    margin: 10px;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 10px var(--color4);
+}
+
+#contact {
+    padding-bottom: 20px;
+}
 
 header {
-    background-color: #EB9F9F;
+    background-color: var(--color3);
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 120px;
-    box-sizing: border-box;
-    margin: 0;
+    height: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .header__img {
-    height: 100px;
+    height: 15vh;
 }
 
 ul {
@@ -113,11 +137,11 @@ li {
 
 .header__link {
     text-decoration: none;
-    color: #A79C8E;
+    color: var(--color4);
 }
 
 .header__link:hover {
-    color: #F8ECC9;
+    color: var(--color1);
 }
 
 .active {
@@ -125,22 +149,21 @@ li {
 }
 
 footer {
+    bottom: 0;
     width: 100vw;
     height: 8vh;
-    background-color: #EB9F9F;
     padding: 20px;
+    background-color: var(--color3);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    left: 0;
-    color: #A79C8E;
+    color: var(--color4);
 }
 
 footer div {
-    width: 20vw;
+    width: 20%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .footer__logo {
     height: 50px;
@@ -150,20 +173,33 @@ footer div {
     opacity: 0.5;
 }
 
+.message_sent {
+    background-color: var(--color3);
+    border-radius: 20px;
+    padding: 10px;
+  }
+
 form {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    border: 2px solid #A79C8E;
     border-radius: 25px;
     padding: 20px;
-    background-color: #F1BBBA;
+    background-color: var(--color2);
 }
 
+button {
+    margin-top: 10px;
+    font-family: "Kreon";
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: var(--color3);
+  }
 
 label {
     font-family: 'Kreon', serif;
     font-size: 1.6rem;
+    color: var(--color4)
 }
 
 .bloc-modale {
@@ -192,7 +228,7 @@ label {
     left: 20%;
     top: 25%;
     border-radius: 20px;
-    background: #F8ECC9;
+    background: var(--color1);
     width: 60%;
     padding-bottom: 30px;
 }
