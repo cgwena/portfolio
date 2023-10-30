@@ -1,11 +1,9 @@
 <template>
-    <div class="home">
-        <Header />
-        <About />
-        <Creations />
-        <Contact />
-        <Footer />
-    </div>
+    <Header />
+    <About />
+    <Creations />
+    <Contact />
+    <Footer />
 </template>
 
 <script setup>

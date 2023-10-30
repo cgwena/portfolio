@@ -63,26 +63,11 @@ export default {
 </script>
 
 <style scoped>
-.projects {
-    display: flex;
-    justify-content: space-around;
-    width:100vw;
-    padding: 25px;
-}
 
-.card {
-    text-align: center;
-    border : 1px solid #EB9F9F;
-    border-radius: 15px;
-    width: 30vw;
-    padding-top: 20px;
-}
-
-.card:hover {
-    box-shadow: 10px 10px 10px #EB9F9F;
-}
 
 img {
-    max-width: 80%;
+    width: 90%;
+    padding: 5px;
+    border-radius: 15px 15px 0 0;
 }
 </style>

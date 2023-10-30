@@ -11,10 +11,5 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-div {
-  width: 15%;
-  display: flex;
-  justify-content: space-around;
 
-}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <p v-show="message_sent">Message envoyé à {{ mail }}</p>
+  <p class="message_sent" v-show="message_sent">Message envoyé à {{ mail }}</p>
   <form @submit.prevent="onSubmit" class="form" ref="form">
     <div>
       <label for="name">Entrez votre nom...</label>
@@ -46,19 +46,5 @@ export default {
 div {
   display: flex;
   flex-direction: column;
-}
-
-button {
-  margin-top: 10px;
-  font-family: "Kreon";
-  font-size: 2rem;
-  border-radius: 10px;
-  background-color: #eb9f9f;
-}
-
-p {
-  background-color: #eb9f9f;
-  border-radius: 20px;
-  padding: 10px;
 }
 </style>

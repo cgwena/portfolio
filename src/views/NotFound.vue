@@ -24,7 +24,6 @@ section {
     padding-top: 100px;
     padding-bottom: 30px;
     height: 100vh;
-    width: 100vw;
 }
 
 h2 {

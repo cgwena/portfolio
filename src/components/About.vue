@@ -10,23 +10,12 @@
     </section>
 </template>
 
-<script>
-
-</script>
-
 <style scoped>
-img {
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 1px solid #EB9F9F;
-}
 
-section {
+
+#about {
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 div {
