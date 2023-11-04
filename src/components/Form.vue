@@ -1,5 +1,4 @@
 <template>
-  <p class="message_sent" v-show="message_sent">Message envoyé à {{ mail }}</p>
   <form @submit.prevent="onSubmit" class="form" ref="form">
     <div>
       <label for="name">Entrez votre nom...</label>
@@ -14,6 +13,7 @@
       <textarea ref="message" rows="20" cols="100" placeholder="Mon message" required />
     </div>
     <button type="submit" value="send" @click="showMessage">C'est parti !</button>
+    <p class="message_sent" v-show="message_sent">Message envoyé à {{ mail }}</p>
   </form>
 </template>
 
