@@ -2,14 +2,17 @@
     <section>
         <img src="/src/assets/pictures/magnifying glass.png" alt="">
         <h2>404 - Page not found !</h2>
-        
     </section>
     <Footer />
     
 </template>
 
-<script>
+<script setup>
 import Footer from '../components/Footer.vue'
+
+components: {
+    Footer
+}
 </script>
 
 <style scoped>

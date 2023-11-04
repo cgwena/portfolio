@@ -63,8 +63,6 @@ export default {
 </script>
 
 <style scoped>
-
-
 img {
     width: 90%;
     padding: 5px;

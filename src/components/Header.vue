@@ -39,4 +39,5 @@ export default {
 <style scoped>
 .active {
     text-decoration: underline;
-}</style>
+}
+</style>
