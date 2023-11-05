@@ -32,6 +32,30 @@ export default {
         updateActiveSection(section) {
             this.activeSection = section;
         },
+        handleScroll() {
+            
+            const aboutSection = document.getElementById('about');
+            const projectsSection = document.getElementById('projects');
+            const contactSection = document.getElementById('contact');
+
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition >= aboutSection.offsetTop && scrollPosition < projectsSection.offsetTop) {
+                this.activeSection = 'about';
+            } else if (scrollPosition >= projectsSection.offsetTop && scrollPosition < contactSection.offsetTop) {
+                this.activeSection = 'projects';
+            } else if (scrollPosition >= contactSection.offsetTop) {
+                this.activeSection = 'contact';
+            }
+        }
+    },
+    mounted() {
+        // Ajoutez un écouteur d'événements de défilement sur la fenêtre lors du montage du composant
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    beforeDestroy() {
+        // Assurez-vous de supprimer l'écouteur d'événements de défilement lors de la destruction du composant
+        window.removeEventListener('scroll', this.handleScroll);
     },
 };
 </script>
