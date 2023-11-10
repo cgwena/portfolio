@@ -1,19 +1,10 @@
+
 <template>
     <section>
         <img src="/src/assets/pictures/magnifying glass.png" alt="">
         <h2>404 - Page not found !</h2>
     </section>
-    <Footer />
-    
 </template>
-
-<script setup>
-import Footer from '../components/Footer.vue'
-
-components: {
-    Footer
-}
-</script>
 
 <style scoped>
 img {
@@ -21,15 +12,8 @@ img {
     border-radius: 0 0 0 50%;
 }
 
-section {
-    display: flex;
-    align-items: center;
-    padding-top: 100px;
-    padding-bottom: 30px;
-    height: 100vh;
-}
-
 h2 {
     font-family: 'Kreon';
 }
 </style>
+

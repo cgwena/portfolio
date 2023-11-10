@@ -52,6 +52,7 @@ export default {
         }
     },
     methods: {
+        //Fonction pour afficher ou cacher la modale
         toggleModale(project) {
             this.selectedProject = project;
             this.revele = !this.revele

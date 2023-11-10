@@ -4,7 +4,7 @@
             <p>Bonjour, moi c'est</p>
             <h1>Gwenaëlle Boussès</h1>
             <p>et je suis</p>
-            <h2>Développeuse Web !!!</h2>
+            <h2><strong>Développeuse Web !!!</strong></h2>
         </div>
         <img src="/src/assets/pictures/greetings.png" alt="">
     </section>

@@ -2,11 +2,11 @@
   <form @submit.prevent="onSubmit" class="form" ref="form">
     <div>
       <label for="name">Entrez votre nom...</label>
-      <input ref="name" type="text" placeholder="Marie Dupont" required />
+      <input ref="name" type="text" placeholder="Marie Dupont" required>
     </div>
     <div>
       <label for="subject">Le sujet de votre message...</label>
-      <input ref="subject" type="text" placeholder="À propos de..." required />
+      <input ref="subject" type="text" placeholder="À propos de..." required>
     </div>
     <div>
       <label for="message">Et votre message !</label>
@@ -22,11 +22,13 @@ export default {
   name: "Form",
   data() {
     return {
+      //Import de l'adresse mail du dossier .env
       mail: import.meta.env.VITE_MAIL_ADRESS,
       message_sent: false
     }
   },
   methods: {
+    //Affichage de l'adresse mail quand un message est envoyé après vérification des champs
     showMessage() {
       let name = this.$refs.name.value
       let subject = this.$refs.subject.value
