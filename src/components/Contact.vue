@@ -18,9 +18,7 @@ import Form from './Form.vue'
 
 <style scoped>
 section {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 </style>

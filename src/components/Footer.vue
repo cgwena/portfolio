@@ -1,6 +1,6 @@
 <template>
         <footer>
-                <small>Mis à jour le <time datetime="2023-10-30">30 octobre 2023</time></small>
+                <small>Mis à jour le <time datetime="2023-11-05">5 novembre 2023</time></small>
                 <div>
                         <a href="https://github.com/cgwena" target="_blank"><img class="footer__logo"
                                         src="/src/assets/icons/github.png" alt="logo github"></a>

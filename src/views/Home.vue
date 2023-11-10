@@ -13,5 +13,3 @@ import Creations from '../components/Creations.vue'
 import Contact from '../components/Contact.vue'
 import Footer from '../components/Footer.vue'
 </script>
-
-<style></style>

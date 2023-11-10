@@ -16,12 +16,8 @@ import Projects from './Projects.vue'
 </script>
 
 <style scoped>
-
 section {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }
-
 </style>
