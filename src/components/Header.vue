@@ -59,9 +59,3 @@ export default {
     },
 };
 </script>
-
-<style scoped>
-.active {
-    text-decoration: underline;
-}
-</style>
