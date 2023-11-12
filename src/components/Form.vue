@@ -2,15 +2,15 @@
   <form @submit.prevent="onSubmit" class="form" ref="form">
     <div>
       <label for="name">Entrez votre nom...</label>
-      <input ref="name" type="text" placeholder="Marie Dupont" required>
+      <input id="name" ref="name" type="text" placeholder="Marie Dupont" required>
     </div>
     <div>
       <label for="subject">Le sujet de votre message...</label>
-      <input ref="subject" type="text" placeholder="À propos de..." required>
+      <input id="subject" ref="subject" type="text" placeholder="À propos de..." required>
     </div>
     <div>
       <label for="message">Et votre message !</label>
-      <textarea ref="message" rows="20" cols="100" placeholder="Mon message" required />
+      <textarea  id="message" ref="message" rows="20" cols="100" placeholder="Mon message" required />
     </div>
     <button type="submit" value="send" @click="showMessage">C'est parti !</button>
     <p class="message_sent" v-show="message_sent">Message envoyé à {{ mail }}</p>

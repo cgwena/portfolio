@@ -1,7 +1,7 @@
 
 <template>
     <section>
-        <img src="/src/assets/pictures/magnifying glass.png" alt="">
+        <img src="/src/assets/pictures/magnifying-glass.png" alt="">
         <h2>404 - Page not found !</h2>
     </section>
 </template>

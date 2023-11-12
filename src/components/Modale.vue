@@ -11,7 +11,7 @@
                         :alt="project.alt"></a>
                 <div class="text">
                     <p>Créé le {{ project.date }}</p>
-                    <p v-if="project.logos">Made with <img class="logo" v-for="logo in project.logos" :src="logo" alt="">
+                    <p v-if="project.logos">Made with <img class="logo" v-for="logo in project.logos" :src="logo" alt="logos des outils uyilisés pour créer le site">
                     </p>
                     <p v-if="project.gh_link">Retrouvez ce projet sur <a v-bind:href="project.gh_link" target="_blank"><img
                                 class="logo" src="/src/assets/icons/github.png" alt=""></a></p>
